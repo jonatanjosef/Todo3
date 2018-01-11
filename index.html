@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="utf-8">
+    <title>JQuery | ToDo</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1ea0ded6c7.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <ul id="headerStyle">
+                <li>
+                    <a href="index.html">ToDo</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Contact</a>
+                </li>
+                <li class="nav-right">
+                    <div id="form">
+                        <p class="inlogg">User</p>
+                        <input type="text" value="" class="user"><p class="inlogg">Password</p>
+                        <input type="password" value="" class="password">
+                        <button class="loginButton">Login</button>
+                        <button class="logoutButton">Logout</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="main">Välkommen! Logga in</div>
+            <div id="forgot">Oops, något gick snett :(.</div>
+            <div id="member">Du är inloggad
+                <span id="namn"></span>
+                <h3>Lägg till todo
+                    <input type="text" value="" class="toDoInput">
+                    <button class="addToDoButton">Lägg till</button>
+                </h3>
+                <div id="todo">Dina
+                    <span id="number"></span> uppgifter</div>
+                <br/>
+                <div id="list"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

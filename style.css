@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    
+    background-color: rgba(214, 211, 182, 0.906);
+}
+#container {
+    display:flex;
+    flex-direction:column;
+}
+#content {
+    
+    padding: 10px;
+}
+#list li {
+    width: 20%;
+    
+    list-style: none;
+    padding: 10px;
+    color: rosybrown;
+}
+#header {
+    padding: 0;
+    margin: 0;
+
+    height: 65px;
+    width: 100%;
+    background-color: ivory;
+}
+#nav {
+    padding: 0;
+    margin: 0;
+}
+#header ul {
+    list-style: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+#header li {
+    padding: 10px 30px;
+    margin: 10px;
+    border-bottom: orangered 2px solid;
+}
+#header li a {
+    text-decoration: none;
+    color: gold;
+}
+#header li #form {
+    text-decoration: none;
+    color: gold;
+}
+#header li:last-of-type {
+    margin-left: auto;
+}
+a:hover {
+    color: lightgray;
+}
+
+
+/* footer */
+
+#footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 85px;
+}
+#footerStyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#footerStyle a {
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+  }
+  #footerStyle li {
+    text-decoration: none;
+    display: block;
+    padding: 3em;
+    color: whitesmoke;
+  }
